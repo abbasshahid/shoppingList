@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Groceries Shopping List</h1>
+    <div>
+        <input type="text" id="itemInput" placeholder="Add an item"  class="input">
+        <input type="number" id="quantityInput" min="1" value="1" class="input">
+        <select id="categoryInput"  class="input">
+            <option value="Vegetables" >Vegetables</option>
+            <option value="Dairy">Fruits</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Pastries">Bakery</option>
+            <option value="Others">Others</option>
+        </select>
+        <button onclick="newItem()" id="button">Add</button>
+    </div>
+    <ul id="groceryList">
+        <!-- Items will go here -->
+    </ul>
+    <button onclick="clearList()" id="button">Clear All</button>
+    <button onclick="clearChecked()" id="button">Clear Checked</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
